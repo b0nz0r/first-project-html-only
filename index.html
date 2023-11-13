@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style Sheet Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>First Project</title>
   </head>
   <body>
     <header>
       <!-- Start The Title of Object -->
-      <h1>League Of Legends</h1>
+      <h1 class="main-title">League Of Legends</h1>
       <!-- End The Title of Object -->
-      <nav>
+      <nav class="navigation">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -22,7 +31,7 @@
     </header>
     <!-- Start Explain the Subject -->
     <main>
-      <section id="about">
+      <section id="about" class="about">
         <h2>About :</h2>
         <p>
           League of Legends (LoL), commonly referred to as League, is a 2009
@@ -45,54 +54,62 @@
         <!-- End Explain the Subject -->
       </section>
       <!-- Start Images And Video -->
-      <section id="color">
+      <section id="color" class="img-vid">
         <h2>Images And Videos :</h2>
-        <img width="45%" src="images/image-1.jpg" alt="league of legends One" />
-        <img
-          width="45%"
-          src="images/image-2.webp"
-          alt="league of legends Two"
-        />
-        <iframe
-          width="1013"
-          height="570"
-          src="https://www.youtube.com/embed/yYyZ71-y3fw"
-          title="How To Play League Of Legends - LoL Beginner Guide 2022 / 2023"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <div class="images">
+          <img
+            class="image-1"
+            src="images/image-1.jpg"
+            alt="league of legends One"
+          />
+          <img
+            class="image-2"
+            src="images/image-2.webp"
+            alt="league of legends Two"
+          />
+        </div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/yYyZ71-y3fw"
+            title="How To Play League Of Legends - LoL Beginner Guide 2022 / 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
       <!-- End Images And Video -->
       <!-- Start Type Your information -->
-      <section id="login">
+      <section id="login" class="login">
         <h2>Login :</h2>
         <form>
           <label>Username :</label>
           <br /><br />
-          <input type="text" placeholder="Type Username" />
+          <input type="text" placeholder="Type Username" name="Username" />
           <br /><br />
           <label>Email :</label>
           <br /><br />
-          <input type="email" placeholder="Type Email" />
+          <input type="email" placeholder="Type Email" name="Email" />
           <br /><br />
           <label>Password :</label>
           <br /><br />
-          <input type="password" placeholder="Type Password" />
+          <input type="password" placeholder="Type Password" name="pass" />
           <br /><br />
-          <input type="submit" value="Login" />
-          <input type="reset" value="Reset" />
+          <input class="submit" type="submit" value="Sign In" />
+          <input class="submit" type="reset" value="Reset" />
         </form>
       </section>
     </main>
     <!-- End Type Your information -->
     <!-- Start The Footer -->
     <footer id="contact">
-      <h2>Contact :</h2>
+      <h2 class="main-title">Contact :</h2>
       <!-- Start Contact -->
       <div>
-        <p><a href="leagueoflegends@league.com">Mail Me</a></p>
-        <p dir="rtl">Copyright 2023 League Of Legends &copy;</p>
+        <p>
+          <a href="leagueoflegends@league.com">If You Want Help Mail Me !</a>
+        </p>
+        <p>Copyright 2023 League Of Legends &copy;</p>
       </div>
       <!-- End Contact -->
     </footer>
