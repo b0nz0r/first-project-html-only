@@ -86,8 +86,8 @@ section.login input {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-section.login input::placeholder {
-  color: white;
+section.login form input::placeholder {
+  color: #ccc;
 }
 section.login input.submit {
   cursor: pointer;
